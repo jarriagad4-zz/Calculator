@@ -29,7 +29,7 @@ def D2H(num1):
     while num1 > 0:
         num2 = num1 % 16    #num2 is the remainder
         num1 = num1 // 16   #num 1 is then transformed to quotient of original num1
-        list1.append(num2)
+        list1.append(num2)  #num2 is appended to list
         
     for i in list1:
         hex1 = HEXdict[i]
@@ -40,5 +40,9 @@ def D2H(num1):
     #reversal of the string
     txt1 = str2 [::-1]
     return(txt1)
+
+def H2D(num1):
+    hexans = int(num1, 16)
+    return(str(hexans))
 
 
